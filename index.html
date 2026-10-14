@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body style="background-color: #000000;"
+    <head>
+        <style>
+            body{font-size: 10px;
+            color: #d3ccba;}
+            /*change font for the entire webpage*/
+            body{font-family: Arial, Helvetica, sans-serif;}
+            h1 {text-align: center;}
+            body {text-align: center;}
+            table.centre {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            img.circle {
+                border-radius: 50%;
+            }
+
+            form {
+                display: inline-block;
+                padding: 1em;
+                border: 1px solid #d3ccba;
+                border-radius: 1em;
+            }
+
+            label {
+                display: inline-block;
+                min-width: 90px;
+                text-align: left;
+            }
+
+            input, textarea {
+                width: 340px;
+                box-sizing: border-box;
+                background-color: #d3ccba;
+            }
+
+            input:focus, textarea:focus {
+                outline-style: solid;
+                outline-color: black;
+            }
+
+            textarea {
+                vertical-align: top;
+                height: 5em;
+
+            }
+
+            .button {
+                padding-left: 90px;
+            }
+
+            button {
+                margin-left: 0.5em;
+            }
+
+            .review-card {
+                background-color: #d3ccba;
+                color: #d3ccba ;
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 12px;
+                border: 1px solid #d3ccba;
+            }
+
+            .review-card h3 {
+                margin-top: 0;
+                font-size: 1.4rem;
+            }
+
+            .review-card p {
+                line-height: 1.6;
+            }
+
+        </style>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>horrorboxd</title>
+    </head>
+    <body>
+        <h1>horrorboxd</h1>
+        <img src="gabriette.jpg" width="100px" class="circle"/>
+
+        <p>ꨄ︎</p>
+        
+
+
+        <table class="centre">
+            <tr>
+                <td><img src="one.gif" width="150px"/></td>
+                <td><img src="two.gif" width="150px"/></td>
+                <td><img src="three.gif" width="150px"/></td>
+            </tr>
+        </table>
+
+        <p>*making this because i'm too broke to get letterboxd pro</p>
+        <h2>꒰১ Favourites ໒꒱</h2>
+
+         <table class="centre">
+            <tr>
+                <td><img src="Saw_2004.jpg" width="150px"/></td>
+                <td><img src="lisa.jpg" width="150px"/></td>
+                <td><img src="X (2022).jpg" width="150px"/></td>
+            </tr>
+            <tr>
+                <td>Saw</td>
+                <td>Lisa Frankenstein</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>★★★★★</td>
+                <td>★★★★☆</td>
+                <td>★★★★☆</td>
+            </tr>
+            <tr>
+                <td><img src=""/></td>
+                <td><img src=""/></td>
+                <td><img src=""/></td>
+            </tr>
+                
+        </table>
+
+        <!--Need to make a journal type system so that whenever i fill out a document,
+        it adds a column to a previous table with all the information 
+        I wrote out ?? 
+        Create some sort of form of questions to input the answers to and then use a
+        button which will then take the input and display them. We can figure out
+        storing the data later.-->
+
+        <form id="review-form">
+            <p>
+                <label for="movie">Movie:</label>
+                <input type="text" id="movie" name="movie-name" />
+            </p>
+            <p>
+                <label for="rating">Rating:</label>
+                <input type="text" id="rating" name="movie-rating" />
+
+            </p>
+
+            <p>
+
+                <label for="review">Add Review:</label>
+                <textarea id="review" name="movie-review"></textarea>
+            </p>
+            
+            <p class="button">
+                <button type="submit">Save</button>
+            </p>
+        </form>
+
+        <!--okay, now i have to figure out how to display the inputed data using Java-->
+        <script src="script.js"></script>
+
+        <div id="reviews-container"></div>
+
+
+        
+
+    </body>
+</html>
